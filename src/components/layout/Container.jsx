@@ -1,10 +1,12 @@
 import { Outlet } from 'react-router-dom';
-import style from './Container.module.css';
+import styles from './Container.module.css';
 
-function Container() {
+function Container({customClass}) {
   return (
-    <main className={style.container}>
+    <main className={`${styles.container} ${styles[customClass]}`}>
       <Outlet />
     </main>
   );
 }
+
+export default Container;

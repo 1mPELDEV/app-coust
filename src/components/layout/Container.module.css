@@ -1,6 +1,18 @@
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: red;
+  width:1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap;  
+}
+
+.min_height{
+  min-height: 75%;
+}
+
+.start {
+    justify-self: flex-start;
+}
+.column {
+    flex-direction: column;
 }
