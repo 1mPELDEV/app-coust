@@ -4,8 +4,9 @@ import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
 import Home from './components/pages/Home';
 import Contact from './components/pages/Contact';
 import Company from './components/pages/Company';
-import NewProject from './components/NewProject';
-import Projects from './components/Projects.jsx';
+import Projects from './components/pages/Projects';
+import NewProjects from './components/pages/NewProjects';
+
 
 //layout
 import Container from './components/layout/Container';
@@ -23,7 +24,7 @@ function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="company" element={<Company />} />
         <Route path="Projects" element={<Projects />} /> 
-        <Route path="newProject" element={<NewProject />} />
+        <Route path="NewProjects" element={<NewProjects />} />
       </Route>
     </Routes>
     <Footer />
